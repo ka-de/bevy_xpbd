@@ -7,21 +7,21 @@ edition = "2021"
 use-debug-plugin = []
 
 [dependencies]
-bevy = { version = "0.13", default-features = false, features = [
-    "bevy_core_pipeline",
-    "bevy_text",
-    "bevy_ui",
-    "bevy_asset",
-    "bevy_render",
-    "bevy_sprite",
-    "bevy_pbr",
-    "bevy_gizmos",
-    "default_font",
-    "tonemapping_luts",
-    "ktx2",
-    "png",
-    "zstd",
-    "bevy_winit",
-    "x11",                # github actions runners don't have libxkbcommon installed, so can't use wayland
+bevy = { version = "0.13.2", default-features = false, features = [
+  "bevy_core_pipeline",
+  "bevy_text",
+  "bevy_ui",
+  "bevy_asset",
+  "bevy_render",
+  "bevy_sprite",
+  "bevy_pbr",
+  "bevy_gizmos",
+  "default_font",
+  "tonemapping_luts",
+  "ktx2",
+  "png",
+  "zstd",
+  "bevy_winit",
+  "x11",                # github actions runners don't have libxkbcommon installed, so can't use wayland
 ] }
 bevy_xpbd_3d = { path = "../bevy_xpbd_3d", default-features = false }
